@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viiah's Tools Part 2</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to top, #000 30%, #000033 100%);
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s ease, opacity 0.5s ease;
+            opacity: 1;
+        }
+        header {
+            text-align: center;
+            padding: 100px 0;
+        }
+        h1 {
+            font-weight: 300;
+        }
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            margin: 20px 0;
+        }
+        .description {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+        .btn-custom {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            color: #fff;
+            font-size: 1.1rem;
+            border-radius: 25px;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+        }
+        .btn-custom:hover {
+            box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+        .btn-custom:active {
+            transform: scale(0.95);
+            transition: transform 0.2s ease;
+        }
+        .btn-custom:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        *:focus {
+            outline: none;
+        }
+        a, button {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Viiah's Tools Part 2.</h1>
+        <div class="line"></div>
+    </header>
+
+    <div class="description">
+        <p>Viiah's Tools Part 2 will contain a few tools in the future, if I decide to continue working on it. <br> Return to Home for now, and maybe in the future this page will have a tool or two.</p>
+    </div>
+
+    <div style="text-align: center;">
+        <a href="#" class="btn-custom" id="redirectButton">Return to Home</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        document.getElementById('redirectButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.body.style.background = 'black';
+            document.body.style.opacity = '0';
+            setTimeout(function() {
+                window.location.href = 'https://viiah.com';
+            }, 500);
+        });
+    </script>
+</body>
+</html>
